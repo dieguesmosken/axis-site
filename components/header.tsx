@@ -4,18 +4,20 @@ import Link from "next/link"
 export default function Header() {
   return (
     <header className="bg-dark py-4 px-6 flex justify-between items-center">
-      <div className="flex items-center">
+      {/* Lado esquerdo: logo folha */}
+      <div className="w-16 flex items-center justify-start">
         <div className="relative w-16 h-16">
-          <Image src="/placeholder.svg?height=64&width=64" alt="Green Leaf Logo" fill className="object-contain" />
-          <span className="text-xs text-center block mt-1">Green Leaf</span>
+          <Image src="https://thelimaleo.github.io/Prototipo_site_PI/imgs/folhas.svg" alt="Green Leaf Logo" fill className="object-contain" />
         </div>
       </div>
-
+      {/* Centro: logo AXIS */}
       <div className="flex-1 flex justify-center">
-        <h1 className="text-5xl font-bold tracking-wider">AXIS</h1>
+        <div className="relative w-16 h-16">
+          <Image src="https://thelimaleo.github.io/Prototipo_site_PI/assets/logos/AXIS.svg" alt="AXIS Logo" fill className="object-contain" />
+        </div>
       </div>
-
-      <nav>
+      {/* Navegação: lado direito */}
+      <nav className="w-16 flex items-center justify-end">
         <ul className="flex space-x-6">
           <li>
             <Link href="/" className="text-primary hover:underline">
@@ -24,7 +26,7 @@ export default function Header() {
           </li>
           <li>
             <Link href="/sobre" className="text-primary hover:underline">
-              Sobre Nós
+              Equipe
             </Link>
           </li>
           <li>

@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col bg-gray-900 text-gray-100">
       <Header />
 
       {/* Hero Section */}
@@ -32,14 +32,17 @@ export default function Home() {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-full max-w-md h-64 md:h-80">
-              <Image
-                src="/placeholder.svg?height=320&width=400"
-                alt="Plantação de mandioca"
-                fill
-                className="object-cover rounded-lg shadow-lg"
+          {/* iframe da pagina */}
+            <div className="relative w-full max-w-md h-64 md:h-80 rounded-lg overflow-hidden shadow-lg border border-gray-200">
+              <iframe
+              src="https://greenleafaxis.vercel.app/"
+              title="Preview do Projeto"
+              className="w-full h-full"
+              loading="lazy"
+              sandbox="allow-scripts allow-same-origin allow-popups"
               />
             </div>
+            {/* fim do iframe */}
           </div>
         </div>
       </section>

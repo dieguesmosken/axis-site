@@ -102,16 +102,19 @@ export default function CadastroPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col bg-gray-900 text-gray-100">
       <Header />
 
       <section className="flex-1 py-12 px-6">
-        <div className="max-w-md mx-auto bg-dark p-8 rounded-lg shadow-lg">
+        <div className="max-w-md mx-auto">
           <h2 className="text-2xl font-bold mb-6 text-center">Cadastro</h2>
 
           {errors.form && <div className="bg-red-500 text-white p-3 rounded mb-4">{errors.form}</div>}
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full mx-auto mt-8"
+          >
             <div>
               <label htmlFor="nome" className="block mb-1 font-medium">
                 Nome Completo
@@ -122,8 +125,8 @@ export default function CadastroPage() {
                 name="nome"
                 value={formData.nome}
                 onChange={handleChange}
-                className={`w-full px-4 py-2 rounded bg-gray-800 border ${
-                  errors.nome ? "border-red-500" : "border-gray-700"
+                className={`w-full px-4 py-2 rounded bg-gray-700 border ${
+                  errors.nome ? "border-red-500" : "border-gray-600"
                 }`}
               />
               {errors.nome && <p className="text-red-500 text-sm mt-1">{errors.nome}</p>}
@@ -139,8 +142,8 @@ export default function CadastroPage() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-4 py-2 rounded bg-gray-800 border ${
-                  errors.email ? "border-red-500" : "border-gray-700"
+                className={`w-full px-4 py-2 rounded bg-gray-700 border ${
+                  errors.email ? "border-red-500" : "border-gray-600"
                 }`}
               />
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -157,8 +160,8 @@ export default function CadastroPage() {
                   name="senha"
                   value={formData.senha}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 rounded bg-gray-800 border ${
-                    errors.senha ? "border-red-500" : "border-gray-700"
+                  className={`w-full px-4 py-2 rounded bg-gray-700 border ${
+                    errors.senha ? "border-red-500" : "border-gray-600"
                   }`}
                 />
                 {errors.senha && <p className="text-red-500 text-sm mt-1">{errors.senha}</p>}
@@ -174,8 +177,8 @@ export default function CadastroPage() {
                   name="confirmarSenha"
                   value={formData.confirmarSenha}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 rounded bg-gray-800 border ${
-                    errors.confirmarSenha ? "border-red-500" : "border-gray-700"
+                  className={`w-full px-4 py-2 rounded bg-gray-700 border ${
+                    errors.confirmarSenha ? "border-red-500" : "border-gray-600"
                   }`}
                 />
                 {errors.confirmarSenha && <p className="text-red-500 text-sm mt-1">{errors.confirmarSenha}</p>}
@@ -192,8 +195,8 @@ export default function CadastroPage() {
                 name="telefone"
                 value={formData.telefone}
                 onChange={handleChange}
-                className={`w-full px-4 py-2 rounded bg-gray-800 border ${
-                  errors.telefone ? "border-red-500" : "border-gray-700"
+                className={`w-full px-4 py-2 rounded bg-gray-700 border ${
+                  errors.telefone ? "border-red-500" : "border-gray-600"
                 }`}
               />
               {errors.telefone && <p className="text-red-500 text-sm mt-1">{errors.telefone}</p>}
@@ -210,8 +213,8 @@ export default function CadastroPage() {
                   name="cidade"
                   value={formData.cidade}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 rounded bg-gray-800 border ${
-                    errors.cidade ? "border-red-500" : "border-gray-700"
+                  className={`w-full px-4 py-2 rounded bg-gray-700 border ${
+                    errors.cidade ? "border-red-500" : "border-gray-600"
                   }`}
                 />
                 {errors.cidade && <p className="text-red-500 text-sm mt-1">{errors.cidade}</p>}
@@ -227,8 +230,8 @@ export default function CadastroPage() {
                   name="estado"
                   value={formData.estado}
                   onChange={handleChange}
-                  className={`w-full px-4 py-2 rounded bg-gray-800 border ${
-                    errors.estado ? "border-red-500" : "border-gray-700"
+                  className={`w-full px-4 py-2 rounded bg-gray-700 border ${
+                    errors.estado ? "border-red-500" : "border-gray-600"
                   }`}
                 />
                 {errors.estado && <p className="text-red-500 text-sm mt-1">{errors.estado}</p>}
@@ -244,7 +247,7 @@ export default function CadastroPage() {
                 name="tipoProdutor"
                 value={formData.tipoProdutor}
                 onChange={handleChange}
-                className="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700"
+                className="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600"
               >
                 <option value="pequeno">Pequeno Produtor</option>
                 <option value="medio">Médio Produtor</option>

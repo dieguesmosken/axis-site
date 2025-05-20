@@ -91,7 +91,7 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col bg-gray-900 text-gray-100">
       <Header />
 
       <section className="flex-1 py-12 px-6 flex items-center justify-center">
@@ -102,12 +102,15 @@ export default function LoginPage() {
             </div>
           )}
 
-          <div className="bg-dark p-8 rounded-lg shadow-lg">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full mx-auto mt-8"
+          >
             <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
             {errors.form && <div className="bg-red-500 text-white p-3 rounded mb-4">{errors.form}</div>}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="space-y-4">
               <div>
                 <label htmlFor="email" className="block mb-1 font-medium">
                   Email
@@ -168,7 +171,7 @@ export default function LoginPage() {
               >
                 {isSubmitting ? "Entrando..." : "Entrar"}
               </button>
-            </form>
+            </div>
 
             <div className="mt-6 text-center">
               <p>
@@ -178,7 +181,7 @@ export default function LoginPage() {
                 </Link>
               </p>
             </div>
-          </div>
+          </form>
         </div>
       </section>
 

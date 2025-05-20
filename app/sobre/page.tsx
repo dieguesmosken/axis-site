@@ -34,10 +34,10 @@ export default function SobrePage() {
   ]
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col bg-gray-900 text-gray-100">
       <Header />
 
-      <section className="bg-primary py-12 px-6 text-black">
+      <section className="bg-gray-800 py-12 px-6 text-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Sobre Nós</h2>
           <p className="text-lg">
