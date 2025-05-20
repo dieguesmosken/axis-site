@@ -8,28 +8,28 @@ export default function SobrePage() {
       role: "Analista de dados, 26 anos",
       description:
         "Com experiência no uso de Python, Pandas, Matplotlib, Numpy, SQL e Excel para coleta, tratamento e análise de dados. Atua na criação de dashboards, automação e geração de insights estratégicos.",
-      imageUrl: "/placeholder.svg?height=160&width=160",
+      imageUrl: "https://avatars.githubusercontent.com/u/181168271?height=160&width=160",
     },
     {
       name: "Bruno De Lucca",
       role: "Designer Gráfico, 22 anos",
       description:
         "Com experiência em design de interfaces e criação de identidades visuais. Habilidades em Photoshop, Gimp e Figma. Focado em criar experiências visuais impactantes e funcionais.",
-      imageUrl: "/placeholder.svg?height=160&width=160",
+      imageUrl: "https://avatars.githubusercontent.com/u/186774654?height=160&width=160",
     },
     {
       name: "Matheus Mosken",
       role: "Developer, 22 anos",
       description:
         "Com experiência em desenvolvimento de software e aplicativos. Habilidades em Linux, Python e React. Focado em criar soluções inovadoras e eficientes.",
-      imageUrl: "/placeholder.svg?height=160&width=160",
+      imageUrl: "https://avatars.githubusercontent.com/u/69434680?height=160&width=160",
     },
     {
       name: "Ana Flávia",
       role: "Administradora de redes, 19 anos",
       description:
         "Com experiência na segurança, infraestrutura, administração das redes, configuração de servidores e monitoramento de servidores.",
-      imageUrl: "/placeholder.svg?height=160&width=160",
+      imageUrl: "https://avatars.githubusercontent.com/u/199160244?height=160&width=160",
     },
   ]
 
